@@ -7,7 +7,7 @@ private double tax=0;
 public Invoice(){
 	
 }
-public Invoice(double value,String untax){
+public void getInvoice(double value,String untax){
 		if(untax.toLowerCase().equals("y")){
 			Untaxable(value);
 		}else if(untax.toLowerCase().equals("n")){
@@ -25,7 +25,7 @@ public void Untaxable(double value){
 	untaxable+=value;
 }
 public double getUntaxable(){
-	return taxable;
+	return untaxable;
 }
 public double payTax(){
 	tax=taxRate*taxable;

@@ -14,7 +14,7 @@ public class BookInvoice {
     	   if(value!=0){
     		   System.out.println("Is it taxable?(y/n)");
     		   untax=sc.next();
-    		   inv=Invoice(value,untax);
+    		   inv.getInvoice(value, untax);
     	   }else{
     		   complete=true;
     	   }
